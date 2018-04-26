@@ -25,7 +25,7 @@ def main(filename):
             # "dream." => "dream"
             word = w.strip(string.punctuation)
             # check if word is not empty
-            if not word == (" "):
+            if not word == '':
                 # append the word to "all_words" list
                 all_words.append(word)
 
