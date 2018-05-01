@@ -50,8 +50,9 @@ def main(filename):
     json.dump(counter.most_common(), k)
 
     # BONUS: dump to a pickle file named "wordcount.pkl"
-    pkl_file = open("wordcount.pkl", 'wb')
-    pickle.dump(counter.most_common(), pkl_file)
+	with open("wordcount.pkl", "wb") as pkl_file:
+		pickle.dump(counter.most_common(), pkl_file)
+
     
     # hint: dump the Counter object directly
 
